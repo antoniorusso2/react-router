@@ -1,11 +1,11 @@
-export default function Footer() {
+export default function AboutUsMain() {
   return (
-    <footer>
+    <>
       <div className="container">
         <div className="row">
-          <div className="col">footer</div>
+          <div className="col">About Us</div>
         </div>
       </div>
-    </footer>
+    </>
   );
 }

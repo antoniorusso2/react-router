@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './layout/DefaultLayout';
+import HomePageMAin from './components/HomePage/HomePageMain';
+import AboutUs from './components/About-us/AboutUsMain';
 
 function App() {
   return (
@@ -8,9 +10,9 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             {/* homepage */}
-            <Route path="/"></Route>
+            <Route path="/" Component={HomePageMAin}></Route>
             {/* about us page */}
-            <Route path="/about"></Route>
+            <Route path="/about" Component={AboutUs}></Route>
             {/* lista posts */}
             <Route path="/posts"></Route>
           </Route>
