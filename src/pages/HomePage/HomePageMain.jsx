@@ -1,9 +1,16 @@
 export default function HomePageMAin() {
   return (
-    <div className="container">
+    <main className="container">
       <div className="row">
-        <div className="col">Questa è la home page</div>
+        <div className="col">
+          <div className="card">
+            <div className="card_head">
+              <img src="https://picsum.photos/200/300?grayscale" alt="" />
+            </div>
+            <div className="card_body"></div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -4,14 +4,14 @@ export default function Nav() {
   return (
     <header>
       <nav className="container">
-        <ul className="links">
-          <NavLink className="link" to="/">
+        <ul className="links row">
+          <NavLink className="nav_link" to="/">
             Home
           </NavLink>
-          <NavLink className="link" to="/about">
+          <NavLink className="nav_link" to="/about">
             About Us
           </NavLink>
-          <NavLink className="link" to="posts">
+          <NavLink className="nav_link" to="posts">
             Posts
           </NavLink>
         </ul>
