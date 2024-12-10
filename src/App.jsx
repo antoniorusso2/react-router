@@ -5,6 +5,7 @@ import AboutUs from './pages/About-us/AboutUsMain';
 import PostsIndex from './pages/Posts/Index';
 import NotFound from './pages/NotFound/NotFound';
 import Show from './pages/Posts/Show';
+import Store from './pages/Posts/Create';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               {/* show */}
               <Route path=":id" Component={Show}></Route>
               {/* store */}
+              <Route path="/posts/create" Component={Store}></Route>
               {/* destroy */}
             </Route>
             {/* 404 */}

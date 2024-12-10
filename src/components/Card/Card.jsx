@@ -8,6 +8,7 @@ export default function Card({ post }) {
   console.log(post);
   const { title, image, id } = post;
 
+  console.log(image);
   console.log(URI);
 
   return (
@@ -21,8 +22,8 @@ export default function Card({ post }) {
           <Link className={`btn ${style.btn}`} to={`${id}`}>
             {/* <button className={`btn ${style.btn}`}> */}
             Leggi di piu
+            {/* </button> */}
           </Link>
-          {/* </button> */}
         </div>
       </div>
     </>

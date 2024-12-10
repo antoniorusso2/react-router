@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from '../../components/Card/Card';
 import { URI } from '../../config';
+import { Link } from 'react-router-dom';
 
-// const URI = 'http://localhost:3000';
-console.log(URI);
 export default function PostsMain() {
   const [posts, setPosts] = useState([]);
 
@@ -12,7 +11,6 @@ export default function PostsMain() {
     axios
       .get(URI + '/posts')
       .then((res) => {
-        console.log(res.data);
         setPosts(res.data);
       })
       .catch((err) => console.error(err));
@@ -26,7 +24,9 @@ export default function PostsMain() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <button className="btn add-new">Aggiungi un post</button>
+              <Link to={'create'}>
+                <button className="btn add-new">Aggiungi un post</button>
+              </Link>
             </div>
             {posts.map((post) => {
               return (

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
 
   --bg-color: #092635;
   --main-color: #5c8374;
@@ -166,6 +169,13 @@ footer {
 }
 .description > h2 {
   margin-bottom: 1rem;
+}
+
+input:not([type='checkbox']) {
+  line-height: 2rem;
+  padding: 0 1.2rem;
+  border-radius: 0.5rem;
+  border: 4px solid var(--accent-color);
 }
 @keyframes extend {
   from {
