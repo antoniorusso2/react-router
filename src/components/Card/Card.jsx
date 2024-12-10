@@ -18,9 +18,11 @@ export default function Card({ post }) {
         </div>
         <div className={style.body}>
           <h2 className={style.title}>{title}</h2>
-          <button className={`btn ${style.btn}`}>
-            <Link to={`${id}`}>Leggi di piu</Link>
-          </button>
+          {/* <button className={`btn ${style.btn}`}> */}
+          <Link className={`btn ${style.btn}`} to={`${id}`}>
+            Leggi di piu
+          </Link>
+          {/* </button> */}
         </div>
       </div>
     </>

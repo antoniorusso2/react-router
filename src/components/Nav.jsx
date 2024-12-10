@@ -6,15 +6,15 @@ export default function Nav() {
       <div className="container">
         <nav className="navbar">
           <ul className="links">
-            <NavLink className="nav_link" to="/">
-              Home
-            </NavLink>
-            <NavLink className="nav_link" to="/about">
-              About Us
-            </NavLink>
-            <NavLink className="nav_link" to="posts">
-              Posts
-            </NavLink>
+            <li className="nav_link">
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li className="nav_link">
+              <NavLink to="/about">About Us</NavLink>
+            </li>
+            <li className="nav_link">
+              <NavLink to="posts">Posts</NavLink>
+            </li>
           </ul>
         </nav>
       </div>

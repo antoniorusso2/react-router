@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { URI } from '../../config';
@@ -8,6 +8,8 @@ export default function Show() {
   const { id } = useParams();
 
   const [post, setPost] = useState(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -24,13 +26,16 @@ export default function Show() {
     <main>
       <div className="container">
         <div className="row">
+          <button onClick={() => navigate(-1)} className="btn go-back">
+            Back
+          </button>
           {post && (
             <>
               <div className="hero">
                 <img src={`${URI}${post.image}` || placeholder} alt="" />
               </div>
               <div className="col-12">
-                <p>{post.content}</p>
+                <p className="post-description">{post.content}</p>
               </div>
             </>
           )}
