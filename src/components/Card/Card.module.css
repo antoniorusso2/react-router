@@ -1,0 +1,25 @@
+.card {
+  /* display: flex; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  background-color: var(--main-color);
+  color: aliceblue;
+  max-width: 400px;
+  /* height: 600px; */
+  margin: 0 auto;
+
+  border-radius: 0.5rem;
+}
+
+.img {
+  border-radius: 0.5rem;
+}
+
+.body {
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.title {
+  margin-bottom: 0.8rem;
+}

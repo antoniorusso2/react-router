@@ -65,12 +65,21 @@ footer {
   padding: 1.2rem 0;
 }
 
-.row {
+.row,
+.navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0 1.2rem;
+  gap: 1.2rem;
 }
+
+.col-6 {
+  flex-basis: calc(100% / 3 - 1.3rem);
+  display: flex;
+  padding: var(--vertical-padding);
+}
+
 /* navbar */
 .nav_link {
   /* margin-left: 1.2rem; */
