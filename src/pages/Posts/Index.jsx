@@ -8,20 +8,21 @@ export default function PostsMain() {
 
   function fetchData() {
     axios
-      .get(URI)
-      .then((res) => console.log(res))
+      .get(URI + 'posts')
+      .then((res) => {
+        setPosts(res.data);
+      })
       .catch((err) => console.error(err));
   }
 
   useEffect(fetchData, []);
 
-  const params = useParams();
-  console.log(params);
-
   return (
     <>
       <main>
-        <div>post list</div>
+        <div className="container">
+          <div className="row"></div>
+        </div>
       </main>
     </>
   );
