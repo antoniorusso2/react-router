@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from '../../components/Card/Card';
+import { URI } from '../../config';
 
-export const URI = 'http://localhost:3000/';
-
+// const URI = 'http://localhost:3000';
+console.log(URI);
 export default function PostsMain() {
   const [posts, setPosts] = useState([]);
 
   function fetchData() {
     axios
-      .get(URI + 'posts')
+      .get(URI + '/posts')
       .then((res) => {
         console.log(res.data);
         setPosts(res.data);

@@ -4,6 +4,7 @@ import HomePageMAin from './pages/HomePage/HomePageMain';
 import AboutUs from './pages/About-us/AboutUsMain';
 import PostsIndex from './pages/Posts/Index';
 import NotFound from './pages/NotFound/NotFound';
+import Show from './pages/Posts/Show';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               {/* index */}
               <Route index Component={PostsIndex}></Route>
               {/* show */}
+              <Route path=":id" Component={Show}></Route>
               {/* store */}
               {/* destroy */}
             </Route>

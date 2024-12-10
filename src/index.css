@@ -58,6 +58,16 @@ footer {
   color: white;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  line-height: 2rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--nav-color);
+  color: var(--accent-color);
+}
+
 /* general layout rules */
 .container {
   max-width: 1600px;
@@ -76,7 +86,7 @@ footer {
 
 .col-6 {
   flex-basis: calc(100% / 3 - 1.3rem);
-  display: flex;
+  /* display: flex; */
   padding: var(--vertical-padding);
 }
 
