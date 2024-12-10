@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './layout/DefaultLayout';
 import HomePageMAin from './pages/HomePage/HomePageMain';
 import AboutUs from './pages/About-us/AboutUsMain';
+import PostsMain from './pages/PostsMain/PostsMain';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             {/* about us page */}
             <Route path="/about" Component={AboutUs}></Route>
             {/* lista posts */}
-            <Route path="/posts"></Route>
+            <Route path="/posts" Component={PostsMain}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -54,12 +54,13 @@ main {
 
 footer {
   background-color: var(--bg-color);
+  min-height: 80px;
   color: white;
 }
 
 /* general layout rules */
 .container {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 1.2rem 0;
 }
@@ -79,9 +80,9 @@ footer {
 }
 
 .nav_link:hover {
-  background-color: var(--accent-color);
-  border-radius: 0.5rem;
-  /* padding: 0.5rem; */
+  opacity: 1;
+  border-radius: 0.2rem;
+  scale: 1.2;
 }
 
 .active {
