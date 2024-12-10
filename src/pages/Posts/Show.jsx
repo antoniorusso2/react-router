@@ -26,15 +26,18 @@ export default function Show() {
     <main>
       <div className="container">
         <div className="row">
-          <button onClick={() => navigate(-1)} className="btn go-back">
-            Back
-          </button>
+          <div className="col-12">
+            <button onClick={() => navigate(-1)} className="btn go-back">
+              Back
+            </button>
+          </div>
           {post && (
             <>
               <div className="hero">
                 <img src={`${URI}${post.image}` || placeholder} alt="" />
               </div>
-              <div className="col-12">
+              <div className="col-12 description">
+                <h2>{post.title}</h2>
                 <p className="post-description">{post.content}</p>
               </div>
             </>

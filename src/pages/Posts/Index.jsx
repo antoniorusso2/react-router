@@ -25,6 +25,9 @@ export default function PostsMain() {
       <main>
         <div className="container">
           <div className="row">
+            <div className="col-12">
+              <button className="btn add-new">Aggiungi un post</button>
+            </div>
             {posts.map((post) => {
               return (
                 <div key={post.id} className="col-6">

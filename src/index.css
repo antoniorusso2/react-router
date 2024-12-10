@@ -27,6 +27,7 @@
 a {
   text-decoration: none;
   color: currentColor;
+  line-height: 2rem;
 }
 
 ul {
@@ -42,7 +43,6 @@ img {
 header {
   background-color: var(--nav-color);
   color: aliceblue;
-  padding: var(--vertical-padding);
 }
 
 body {
@@ -50,6 +50,7 @@ body {
 }
 
 main {
+  padding: var(--vertical-padding);
   flex-grow: 1;
   background-color: var(--main-color);
   width: 100%;
@@ -93,6 +94,9 @@ footer {
   gap: 1.2rem;
 }
 
+.col-12 {
+  flex-basis: 100%;
+}
 .col-6 {
   width: calc(100% / 3 - 1.3rem);
   /* display: flex; */
@@ -106,7 +110,8 @@ footer {
 
 .nav_link {
   position: relative;
-  padding: 0.5rem;
+  margin-right: 1rem;
+  /* padding: 0.5rem; */
   opacity: 0.5;
   /* position: relative; */
 }
@@ -140,17 +145,27 @@ footer {
 
 .hero {
   width: 100%;
+  height: 500px;
+  margin-bottom: 1.2rem;
 }
 
 .hero img {
-  width: 100%;
-  aspect-ratio: 2/1;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* overflow: hidden; */
   object-fit: cover;
   object-position: center;
+  width: 50%;
+  /* height: 400px; */
 }
-.post-description {
+.description {
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: aliceblue;
   font-size: 1.2rem;
+}
+.description > h2 {
+  margin-bottom: 1rem;
 }
 @keyframes extend {
   from {
